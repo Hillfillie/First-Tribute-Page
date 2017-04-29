@@ -1,13 +1,11 @@
-body {
-  background-color: MediumSeaGreen;
-}
-
-h1 {
-  color: DarkGreen;
+h1 { 
+  color: MediumSeaGreen;
+  margin: 0;
 }
 
 h2 {
-  color: Yellow;
+  color: LimeGreen;
+  margin: 0;
 }
 
 .booty {
@@ -19,10 +17,9 @@ h2 {
 }
 
 #first-div {
-  background-color: SeaGreen;
-  margin-top: 20px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  margin-top: 175px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .displayed {
@@ -32,6 +29,50 @@ h2 {
   margin-top: 20px;
 }
 
-a {
-  color: yellow;
+
+
+.button {
+    margin-top: 12px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 38px;
+    border: 0px solid #a12727;
+    border-radius: 19px;
+    background: #4aff74;
+    background: -webkit-gradient(linear, left top, left bottom, from(#4aff74), to(#226b44));
+    background: -moz-linear-gradient(top, #4aff74, #226b44);
+    background: linear-gradient(to bottom, #4aff74, #226b44);
+    text-shadow: #4c7832 -1px 0px 0px;
+    font: normal normal bold 20px tahoma;
+    color: #f7f7f7;
+    text-decoration: none;
+}
+.button:hover,
+.button:focus {
+    background: #59ff8b;
+    background: -webkit-gradient(linear, left top, left bottom, from(#59ff8b), to(#298052));
+    background: -moz-linear-gradient(top, #59ff8b, #298052);
+    background: linear-gradient(to bottom, #59ff8b, #298052);
+    color: #f7f7f7;
+    text-decoration: none;
+}
+.button:active {
+    background: #2c9946;
+    background: -webkit-gradient(linear, left top, left bottom, from(#2c9946), to(#226b44));
+    background: -moz-linear-gradient(top, #2c9946, #226b44);
+    background: linear-gradient(to bottom, #2c9946, #226b44);
+}
+.button:before{
+    content:  "\0000a0";
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    margin: 0 4px -6px -4px;
+    position: relative;
+    top: 0px;
+    left: -4px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACXElEQVRIia2VTWsUQRCGn9odl9XYHeJJZjs/wIu/QBIMURAUD5KTHiKiKCKKaE6CoqgIgoiIJ8EfIOjJiwfBmx5E8COJmiC4icGDSrcoCm55mNk1m53ZmaDvaWaq63mr6J7qKiXlXFyx1hy01gx5H+bL5lVLwYcbFYUzwEVBdxpjZkL49ua/GDgXV4ALAlMCdZABERm31rzzPsz8k0EKvwycAOrLQgPA9tRkuh9D+sDrwFngFBDp8qCCJJke2I9wv/lhsVW6A+fiGnAcOJquWSNpNUIHDvBT0RFBZqw1894HXcmq5DTQAh4Ae4CXeWsU7goyAeRueGYH3oeWteYXcBrYlZMrApuAFwqPFpqLv0sbOBdvAK4CB/IqSxUB4yhfBgfNc+9Dj0mPQQq/BkwWwDsmIowB3lrzbKVJl0EKvwns7UdUFOk+gBEwBvww1jwJPnROVMfAudgCt4GJopIl+3RXgVGgFXx4/HdthtxwHKFMArfS6vpIl4DdzebHp1nRnmPqhhsRymGFG8VwANkIcs+5eCQr2rUHjUZcEzimcElgbTG8IwNss9a88j7MZRo4F9dEOAmcE1i3CnhbFthqrZn1PrztMkiH2hTJSC4JVzK20AKj1po578MsQDWFHwLOk0zJksqdk1ZhdNCa996HaXEu3gdcAdbnJETkd+X7VPAJOBKp6mtEJto1qQioJs/Jt83AdaDWzky/e1XdISIomo5wQSHJT0bu59w+23Iu3gI8pPvCQeHrQnNxqCg/b1wXqrCy1RroijftuVqyVeJPZQm4I+nahCsgfC9j8Acln66AlAXAvQAAAABJRU5ErkJggg==") no-repeat left center transparent;
+    background-size: 100% 100%;
 }
