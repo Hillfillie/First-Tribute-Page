@@ -1,20 +1,66 @@
-<html>
+<!-- DOCTYPE tag needed to include Bootstrap for this project -->
+<!DOCTYPE html>
+<html lang="en">
+	<!-- all things listed in head tag are not visible -->
 	<head>
 		<title>First Tribute Page</title>
+		<!--below link is official access to Bootstrap-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<div id="first-div" class="centered">
+		<!--Navigation bar -->
+		<!-- Note: Collapse and drop down functionality requires Javascript, included at bottom-->
+		<nav class="navbar navbar-inverse">
+  			<div class="container-fluid">
+    			<div class="navbar-header">
+      				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        				<span class="icon-bar"></span>
+       					<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+      				</button>
+      				<!-- Changed href="#" to href="./index.html" to link Logo/Site Name BACK to home page. First . tells computer to look in current directory, NOT whole computer directory. ("relative" url)-->
+      				<a class="navbar-brand" href="./index.html">Marijuana: A Resource</a>
+    			</div>
+    			<div class="collapse navbar-collapse" id="myNavbar">
+      				<ul class="nav navbar-nav">
+        				<li class="active"><a href="#">Home</a></li>
+        				<li class="dropdown">
+          					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Flowers<span class="caret"></span></a>
+         					<ul class="dropdown-menu">
+           						<li><a href="#">Sativa</a></li>
+            					<li><a href="#">Indica</a></li>
+            					<li><a href="#">Hybrid</a></li>
+          					</ul>
+        				</li>
+        				<!-- Replaced href="#" with href="http://en.wiki..." to link history tab to new page. Added target attribute to open in new tab ("absolute" url) -->
+        				<li><a href="https://en.wikipedia.org/wiki/Cannabis_(drug)#History" target="_blank">History
+        					</a></li>
+        				<li><a href="#">Ways to get Started</a></li>
+      				</ul>
+    			</div>
+  			</div>
+		</nav>
+
+
+		<!-- Main Site Info: tagline and action button -->
+		<div id="main-site-banner" class="centered">
 			<h1>Marijuana: A Resource</h1>
 			<h2>For everyone!</h2>
+			<!-- Button generated from internet -->
 			<a class="button" href="#">Judgement-free learning!</a>
 		</div>
+		<!-- Image code, image pulled from internet -->
 		<div class="centered">
 			<img class="displayed img-thumbnail"
 				 src="http://s4.favim.com/mini/49/cannabis-funny-weed-pictures-hemp-humor-marijuana-weed-442306.jpg"
 				 alt="Stoned Cat">
-			<div class="displayed">
-			</div>
-		</div>	
+			<div class="displayed"></div>
+  		</div>
+
+
+  	<!-- Javascript libraries necessary when using Bootsrap, always list at end of code-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	</body>
 </html>

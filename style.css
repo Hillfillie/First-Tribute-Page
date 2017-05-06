@@ -16,7 +16,7 @@ h2 {
   text-align: center;
 }
 
-#first-div {
+#main-site-banner {
   margin-top: 175px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -28,8 +28,6 @@ h2 {
   margin-right: auto;
   margin-top: 20px;
 }
-
-
 
 .button {
     margin-top: 12px;
