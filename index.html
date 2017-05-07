@@ -1,3 +1,5 @@
+<!-- CMD+F allows you to search and find key elements, CMD+SHIFT+D is find and replace; very powerful! use with caution-->
+
 <!-- DOCTYPE tag needed to include Bootstrap for this project -->
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +22,7 @@
         				<span class="icon-bar"></span>
       				</button>
       				<!-- Changed href="#" to href="./index.html" to link Logo/Site Name BACK to home page. First . tells computer to look in current directory, NOT whole computer directory. ("relative" url)-->
-      				<a class="navbar-brand" href="./index.html">Marijuana: A Resource</a>
+      				<a class="navbar-brand" href="./index.html">MJ</a>
     			</div>
     			<div class="collapse navbar-collapse" id="myNavbar">
       				<ul class="nav navbar-nav">
@@ -43,19 +45,25 @@
 		</nav>
 
 
-		<!-- Main Site Info: tagline and action button -->
+		<!-- Main Site Info: tagline, opening paragraph, and image -->
 		<div id="main-site-banner" class="centered">
 			<h1>Marijuana: A Resource</h1>
 			<h2>For everyone!</h2>
-			<!-- Button generated from internet -->
-			<a class="button" href="#">Judgement-free learning!</a>
+			<div class="row">
+			<!-- Class below activates Bootstrap grid system. Col-md-offset=amount of panels in from left, col-md-6=amount of panels used for element, no need for third half of graph. Switched to 'sm' from 'md' so text will shrink apporpriatly with screen size. -->
+				<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
+					<h3>Welcome!</h3>
+					<!-- reminder: id below pulled from CSS -->
+					<p id="main-paragraph">Thank you so much for visiting our page. Our mission is to provide a one-stop shop for information on all things marijuana-related. Our site is intended for all, veteran and novice. Please look around, gain some knowledge, and go forth with a greater understanding of this wonderful plant and it's place in our world.</p>
+				</div> 
+			</div>
 		</div>
-		<!-- Image code, image pulled from internet -->
 		<div class="centered">
-			<img class="displayed img-thumbnail"
-				 src="http://s4.favim.com/mini/49/cannabis-funny-weed-pictures-hemp-humor-marijuana-weed-442306.jpg"
-				 alt="Stoned Cat">
+		<!-- reminder: id below pulled from CSS -->
+			<img id="main-site-image" class="displayed img-thumbnail"
+				 src="https://s-media-cache-ak0.pinimg.com/736x/39/b7/f7/39b7f76f942f3a8d4d26156b5004f367.jpg"
 			<div class="displayed"></div>
+		<div>
   		</div>
 
 
